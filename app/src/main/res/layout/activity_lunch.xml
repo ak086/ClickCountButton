@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity" >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/lunch_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_200" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <Button
+        android:id="@+id/biryani"
+        android:layout_width="147dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="372dp"
+        android:fontFamily="@font/my_font"
+        android:text="Biryani"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/nehari"
+        app:layout_constraintEnd_toStartOf="@+id/korma"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/korma"
+        android:layout_width="127dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="56dp"
+        android:fontFamily="@font/my_font"
+        android:text="Korma"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/nehari"
+        android:layout_width="128dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="140dp"
+        android:fontFamily="@font/my_font"
+        android:text="Nehari"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.749"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="192dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/my_font"
+        android:text="Lunch"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
